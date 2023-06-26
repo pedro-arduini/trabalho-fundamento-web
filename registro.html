@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewpoint" content="width=device-width">
+  <title>Registro</title>
+  <link rel="stylesheet" type="text/css" href="account-style.css">
+
+</head>
+<body>
+<h1>Formulário de Contato</h1>
+
+<form>
+  <input type="text" placeholder="Nome" required>
+  <input type="text" placeholder="Sobrenome" required>
+  <input type="email" placeholder="E-mail" required>
+  <input type="date" placeholder="Data de Nascimento" required>
+
+  <select required>
+    <option value="" disabled selected>Selecione o Sexo</option>
+    <option value="Masculino">Masculino</option>
+    <option value="Feminino">Feminino</option>
+    <option value="Outro">Outro</option>
+  </select>
+
+  <input type="tel" placeholder="Telefone">
+  <input type="tel" placeholder="Celular" required>
+
+  <label for="opcao-contato">Opção de Contato:</label><br>
+  <input type="radio" id="opcao1" name="opcao-contato" value="Email" checked>
+  <label for="opcao1">E-mail</label><br>
+  <input type="radio" id="opcao2" name="opcao-contato" value="Telefone">
+  <label for="opcao2">Telefone</label><br>
+  <input type="radio" id="opcao3" name="opcao-contato" value="Whatsapp">
+  <label for="opcao3">Whatsapp</label><br>
+
+  <input type="password" placeholder="Senha" required>
+
+  <textarea placeholder="Biografia" rows="4" required></textarea>
+
+  <button type="submit">Enviar</button>
+
+  <div class="go-back">
+    <button onclick="history.go(-1)">Voltar</button>
+  </div>
+</form>
+</body>
+</html>
